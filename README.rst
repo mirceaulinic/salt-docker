@@ -1,7 +1,8 @@
-salt-netdev-docker
-==================
+salt-docker
+===========
 
-Docker and Docker compose files to easily startup with Salt for Network Automation
+A collection of Docker files and other script to easily manage my own Salt 
+development environment.
 
 Usage
 -----
