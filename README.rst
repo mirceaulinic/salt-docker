@@ -11,19 +11,19 @@ Usage
 
    .. code-block:: bash
 
-     git clone git@github.com:mirceaulinic/salt-netdev-docker.git
+     git clone git@github.com:mirceaulinic/salt-docker.git
 
 2. Change dir:
 
    .. code-block:: bash
 
-     cd salt-netdev-docker
+     cd salt-docker
 
 3. Start using it:
 
    .. code-block:: bash
 
-     make PROXYID=dummy
+     make start
 
 Example output:
 
