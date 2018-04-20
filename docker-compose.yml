@@ -11,6 +11,7 @@ services:
       - ./master:/etc/salt/master
       - ./pillar/:/etc/salt/pillar/
       - ./states/:/etc/salt/states/
+      - ./extmods:/etc/salt/extmods/
   salt-proxy:
     image: mirceaulinic/salt-proxy:${VERSION}
     hostname: ${PROXYID}

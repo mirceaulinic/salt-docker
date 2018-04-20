@@ -8,3 +8,4 @@ file_roots:
   base:
     - /etc/salt
     - /etc/salt/states
+    - /etc/salt/extmods
