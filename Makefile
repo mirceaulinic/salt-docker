@@ -1,5 +1,6 @@
 NAPALM_LOGS ?= n
 export PROXYID ?= dummy
+export SALT_CLONE_DIR ?= $(HOME)/salt
 
 export VERSION ?= $(shell cat ./VERSION)
 DOCKERFILE_MASTER ?= Dockerfile-master
@@ -20,4 +21,18 @@ publish: build
 
 .PHONY: start
 start:
+	docker-compose up -d
+
+.PHONY: stop
+stop:
+	docker-compose down
+
+.PHONY: env
+env:
+	docker-compose down
+	docker-compose up -d
+
+.PHONY: proxy
+proxy:
+	docker rm -f salt-proxy-$(PROXYID)
 	docker-compose up -d
