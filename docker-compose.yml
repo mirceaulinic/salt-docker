@@ -18,6 +18,7 @@ services:
     container_name: salt-proxy-${PROXYID}
     volumes:
       - ./proxy:/etc/salt/proxy
+      - ./proxy.d/:/etc/salt/proxy.d/
       - ${SALT_CLONE_DIR}/salt/:/usr/lib/python2.7/dist-packages/salt/
     environment:
       - LOG_LEVEL

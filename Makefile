@@ -27,6 +27,9 @@ start:
 stop:
 	docker-compose down
 
+.PHONY: restart
+restart: stop start
+
 .PHONY: env
 env:
 	docker-compose down
