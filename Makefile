@@ -39,3 +39,7 @@ env:
 proxy:
 	docker rm -f salt-proxy-$(PROXYID)
 	docker-compose up -d
+
+.PHONY: clean
+clean: stop
+	rm -rf proxy.d/$(PROXYID)/
